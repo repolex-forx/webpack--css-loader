@@ -1,0 +1,22 @@
+[2026-04-18T18:46:17Z] === ENRICH ITERATION 1 START | repo=webpack/css-loader sha=b2b2de78 ===
+[2026-04-18T18:46:17Z] [iter=1] PHASE START: enrich repo=webpack/css-loader sha=b2b2de78 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/b2b2de78-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/b2b2de789d69fbfc02832d48b4f1abefadbcbbcf.nq.gz
+[2026-04-18T18:46:44Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-18T18:46:48Z] [iter=1] AST store loaded triples=332399 load_secs=4 mem_mb=552 MB
+[2026-04-18T18:46:48Z] [iter=1] Step 2: Finding LSP targets mem_mb=552 MB
+[2026-04-18T18:46:48Z] [iter=1] LSP targets found call_sites=4818 imports=260 extends=0 implements=0 secs=0
+[2026-04-18T18:46:49Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=552 MB
+[2026-04-18T18:46:50Z] [iter=1] Position index built positions=22490 nodes_with_types=27777 secs=2 mem_mb=552 MB
+[2026-04-18T18:46:50Z] [iter=1] Step 3: Starting LSP resolution mem_mb=552 MB already_completed_types=[] already_completed_files=0
+[2026-04-18T18:46:50Z] [iter=1] Resolving target type target_type=call_site count=4818
+[2026-04-18T18:46:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.6 files_done=0 resolved=0 errors=0 current=test/url-option.test.js
+[2026-04-18T18:48:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.5 files_done=2 resolved=4 errors=972 current=test/sourceMap-option.test.js
+[2026-04-18T18:49:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.2 files_done=4 resolved=17 errors=1299 current=test/runtime/getUrl.test.js
+[2026-04-18T18:50:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.8 files_done=7 resolved=49 errors=1581 current=test/helpers/ast-loader.js
+[2026-04-18T18:50:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.3 files_done=15 resolved=67 errors=1831 current=test/import-option.test.js
+[2026-04-18T18:51:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.8 files_done=17 resolved=339 errors=2055 current=test/helpers/readAssets.js
+[2026-04-18T18:51:26Z] [iter=1] Target type resolved target_type=call_site resolved=380 errors=2192 secs=275 mem_mb=552 MB
+[2026-04-18T18:51:26Z] [iter=1] Resolving target type target_type=import_statement count=260
+[2026-04-18T18:51:28Z] [iter=1] Target type resolved target_type=import_statement resolved=213 errors=0 secs=3 mem_mb=552 MB
+[2026-04-18T18:51:32Z] [iter=1] Step 5: Writing final enrichment file triples=31706
+[2026-04-18T18:51:33Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/b2b2de789d69fbfc02832d48b4f1abefadbcbbcf.nq.gz size_kb=572
+[2026-04-18T18:51:33Z] [iter=1] PHASE END: enrich elapsed_s=316 elapsed_min=5.3 total_triples=31706
